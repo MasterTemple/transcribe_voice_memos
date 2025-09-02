@@ -93,22 +93,6 @@ def transcribe_file(
     return result
 
 
-# def transcribe_file_cached(
-#     model,
-#     audio_path: Path,
-#     batch_size: int,
-#     transcript_path: Path,
-# ) -> dict:
-#     """
-#     Load an audio file, run the WhisperX model and return the full result dict.
-#     Only the `segments` key is later written to disk, but we keep the whole dict
-#     in case you need extra info later.
-#     """
-#     if trans
-#     transcribe_file(audio_path, batch_size)
-#     return result
-
-
 def write_transcript(
     transcript_path: Path,
     segments: list[dict],
